@@ -60,6 +60,16 @@ textarea {
 
 
 /* ==========================================================================
+   FLEXBOX
+   ========================================================================== */
+.site-header {
+    display: flex;
+
+}
+
+
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -163,7 +173,7 @@ html {
     margin-top: -290px;
     color: white;
     padding-right: 25px;
-    font-size: 29px;
+    font-size: 2.25em;
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -304,6 +314,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     margin-top: -50px;
     font-size: 22px;
+    width:90%;
 
 }
 
@@ -456,13 +467,447 @@ footer {
 
 
 
+
+
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+
+ .site-header {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 600px;
+}
+
+.site-header  img {
+    height:100px;
+}
+.wrapper, .bubble {
+width:600px; 
 
 }
+.bubblecircle:before {
+margin-top: 5px;
+margin-left: 20px;
+right: 90%;
+}
+
+.bubblecircle {
+    width:120px;
+    height:120px;
+    margin-top: -900px
+}
+
+.bubblecircle p {
+    font-size: 8px;
+    width:120px;
+    padding: 25px 15px;
+}
+
+.frontimage {
+width:570px; 
+}
+
+.right-column h4 {
+    margin-top: -170px;
+    padding-right: 10px;
+    font-size: 1.25em;
+    
+}
+.right-column h5 {
+    margin-top: -20px;
+    padding-right: 10px;
+    
+}
+
+.right-column h1 {
+    margin-top: -25px;
+    margin-left: 10px;
+    font-size: 3.55em;
+    
+}
+
+.right-column p {
+    
+    padding-right: 10px;
+    margin-top: -35px;
+    
+    font-size: 8px;
+    
+}
+
+.left-column {
+    width: 40%;
+}
+
+.left-column img {
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.title h1 {
+    font-size: 1.70em;
+}
+
+
+
+.line {
+    margin-top: -40px;
+    width:280px;
+}
+
+.left-column h3{
+    
+    margin-top: 35px;
+    
+    width: 270px;
+    font-size: 18px;
+   
+}
+
+.left-column p {
+    
+    width: 280px;
+    
+    padding-left: 5px;
+    
+    font-size: 9px;
+}
+
+.right-column {
+    margin-top: -110px;
+}
+
+.bottom-line {
+    width:280px;
+}
+
+.content {
+    width:75%;
+    
+}
+
+.site-side {
+    width:25%;
+    
+}
+
+.left{
+    line-height: 1.7em;
+    float:left;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 1px;
+    padding-right: 0px;
+
+}
+
+.right {
+    width: 100%;
+    line-height: 1.7em;
+    float:left;
+    padding-left: 5px;
+    font-size: 15px;
+    padding-right: 0px;
+
+}
+
+.right p {
+    border-right: hidden;
+}
+
+
+
+
+    blockquote {
+        width: 400px;
+        
+        border-right: hidden;
+        background: url("..//img/bar2.gif") no-repeat;
+        
+
+
+        }
+
+
+blockquote span {
+
+        width: 50px;
+        height: 20px;
+        line-height: 2.5em;
+    }
+
+
+    .content h6 {
+        font-size: 13px;
+    }
+
+    .content h1 {
+        margin-top: -15px;
+        font-size: 55px;
+        line-height: 1.1em;
+    }
+
+    .content h3 {
+        margin-top: -20px;
+        font-size: 19px;
+    }
+
+
+    .site-side p {
+     font-size: 15px;   
+    width: 165px;
+    margin-top: 20px;
+    line-height: 1.7em;
+    text-align: left;
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.content{
+    width:350px;
+}
+.site-header {
+    width: 380px;
+
+   
+}
+
+
+
+.wrapper, .bubble, .site-side  {
+width:360px; 
+}
+
+.frontimage {
+    width:350px;
+
+
+}
+
+.frontimage img{
+    margin-left: -8px;
+   
+
+}
+
+.left-column {
+    float:left;
+    width: 360px;
+    margin-left: -10px;
+    
+}
+
+.left-column img {
+    margin-left: 106px;
+    margin-top: 0;
+    width: 80%;
+}
+
+.left-column h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 2em;
+    width: 360px;
+}
+
+.left-column p {
+    text-align: center;
+    padding: 0;
+    margin-left: 0px;
+    width: 360px;
+}
+
+.line {
+    margin-top: -55px;
+    width: 360px;
+    margin-left: 0;
+}
+
+.bottom-line {
+    width: 360px;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-size: 1.70em;
+    margin-left: 0;
+}
+
+.title {
+    margin-top: -60px;
+    width: 55%;
+    padding-left: 5px;
+}
+
+.right-column {
+    float:left;
+    width: 115%;
+    margin-top: 25px;
+    margin-left: -5px;
+    
+    padding-bottom: 45px;
+}
+
+.right-column img {
+    margin-left: -3px;
+}
+
+.right-column h4{
+    margin-top: -200px;
+    font-size: 1.5em;
+    width: 98%;
+}
+
+.right-column h5{
+    margin-top: -28px;
+    font-size: .75em;
+    width: 98%;
+}
+
+.right-column h1 {
+    font-size: 4.4em;
+    text-align: center;
+    margin-left:-50px;
+margin-top: -20px;
+    }
+
+.right-column p {
+    margin-top: -45px;
+    font-size: .60em;
+    width: 98%;
+}
+
+.content {
+    float:left;
+    margin-left: -8px;
+
+
+}
+
+.content h6 {
+    margin-top: 20px;
+    font-size: .75em;
+    padding-bottom: 30px;
+}
+
+.content h1 {
+    font-size: 4.2em;
+   margin-left: 3px;
+    width:88%;
+    line-height: 1em;
+}
+
+.content h3 {
+    width:90%;
+    margin-top: -20px;
+    font-size: 1.1em;
+    margin-left: 3px;
+}
+
+
+
+
+.wrapper {
+    margin:-4px auto auto 10px;
+    
+}
+
+.site-header {
+    height:80px;
+}
+
+.bubble {
+    position: absolute;
+    margin-top: 520px;
+    width: 90%;
+}
+
+.bubblecircle {
+    width: 120px;
+    height:120px;
+}
+
+.bubblecircle p {
+    font-size: 8px;
+    width:120px;
+    padding: 25px 15px;
+}
+
+.bubblecircle:before {
+margin-top: 5px;
+margin-left: 20px;
+right: 88%;
+}
+
+blockquote {
+        width: 360px;
+        
+        border-right: hidden;
+        background: url("..//img/bar.gif") no-repeat;
+        
+
+
+        }
+
+
+.right {
+    float:left;
+    width: 100%;
+    
+}
+
+.right p {
+    border-right: hidden;
+    padding-bottom: 10px;
+    width: 360px;
+}
+
+.site-side {
+    float:left;
+    width: 360px;
+    margin-left: -8px;
+    
+    
+}
+
+.site-side p{
+    
+    width: 90%;
+    
+    
+}
+
+.credit {
+    margin-left: -8px;
+}
+
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
