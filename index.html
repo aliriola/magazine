@@ -43,7 +43,15 @@
 
        
        <div itemscope itemtype="http://schema.org/ToyotaFactory" class="right-column">
-       <img itemprop="picture" itemscope itemtype="http://schema.org/Photo" src="img/box.png" alt="box">
+       <picture>
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  <source srcset="img/box.png" media="(min-width: 720px)">
+  <source srcset="img/boxmed.png" media="(min-width: 520px)">
+  <source srcset="img/box400.png" media="(min-width: 320px)">
+  <!--[if IE 9]></video><![endif]-->
+  <img srcset="img/boxmed.png" alt="box">
+</picture>
+      </picture>
        <h4>017</h4>
        <h5>04.2015</h5>
        <h1><i>upfront</i></h1>
@@ -51,9 +59,20 @@
 		</div><!--ends right-column-->
 
        
-      <div class="frontimage">
-          <img src="img/factory.jpg" alt="factory" style="width:980px;">
-		</div><!--ends frontimage-->
+      
+         <section class="frontimage">
+      <picture>
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  <source srcset="img/factory.jpg" media="(min-width: 720px)">
+  <source srcset="img/medium.jpg" media="(min-width: 520px)">
+  <source srcset="img/small.jpg" media="(min-width: 320px)">
+  <!--[if IE 9]></video><![endif]-->
+  <img srcset="img/factory.jpg" alt="factory in tennessee">
+</picture>
+      </picture>
+          <!-- <img src="img/factory.jpg" alt="factory" style="width:980px;"> -->
+    </section><!--ends frontimage-->
+		
 
         
             <div itemscope itemtype="http://schema.org/Toyota" class="content">
